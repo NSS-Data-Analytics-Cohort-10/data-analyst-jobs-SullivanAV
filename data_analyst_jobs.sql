@@ -100,7 +100,13 @@ SELECT title
 FROM data_analyst_jobs
 WHERE UPPER (title) LIKE '%ANALYST%'
 
---1669
+--1669=total jobs
+
+SELECT DISTINCT title
+FROM data_analyst_jobs
+WHERE UPPER (title) LIKE '%ANALYST%'
+
+--774 different(unique) jobs
 
 --12.	How many different job titles do not contain either the word ‘Analyst’ or the word ‘Analytics’? What word do these positions have in common?
 
